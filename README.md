@@ -1,2 +1,2 @@
-# gym
-Its a college project gym website
+# STAY FIT
+Its a college project website
