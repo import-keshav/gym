@@ -1,0 +1,171 @@
+body{
+	padding:0px;
+	margin:0px;
+	}
+	
+.top{
+	overflow: hidden;
+	background: #001f3f;
+	}
+
+.logo-image{
+	height: 70px;
+	}
+
+.button{
+	border: none;
+	color: #FFFF;
+	text-align: center;
+	margin-top: 10px;
+	margin-right: 3px;
+	float: right;
+	width: 100px; 
+	height: 50px; 
+	transform: skew(-20deg); 
+	background: #001f3f;
+	overflow: hidden;
+	}
+
+input:hover{
+	background: #0074D9;
+	}
+
+.bottom{
+  background-image: url("http://localhost/gym/images/index2.jpeg");
+  background-size: cover;
+	background-repeat: no-repeat;
+	height:100%;
+	width: 105%;
+	position: relative;
+	overflow: hidden;
+	}
+
+.top-login{
+	width: 100%;
+	height: 12%
+	}
+
+.logo-image-2{
+	height: 50px;
+	position: relative;
+	top: 10px;
+	left: 20px;
+	margin-bottom: -20px;
+	}
+
+.home-button{
+	border: none;
+	color: #FFFF;
+	text-align: center;
+	width: 80px; 
+	height: 60px;
+	position: relative;
+	left: 480px;
+	transform: skew(-20deg); 
+	background: #001f3f;
+	top: 8px;
+	}
+
+
+.username-box{
+	background: #0074D9;;
+	height: 100px;
+	width:  500px;
+	position: relative;
+	color: #FFFF;
+	left: 1130px;
+	bottom: 80px;
+	transform: skew(-20deg);
+	}
+	
+	
+@keyframes box_1_animate{
+	0% { left:0px; top:100px; }
+	100%{ left:200px; top:100px; }
+	}
+
+@keyframes box_2_animate{
+	0% { left:800px; top:100px; }
+	100%{ left:300px; top:100px; }
+	}
+
+.box-1{
+	height: 70px;
+	width:  600px;
+	transform: skew(-20deg);
+	background: #0074D9;
+	color: white;
+	opacity: 0.85;
+	position: relative;
+	top: 100%;
+	animation: box_1_animate 2s;
+	animation-fill-mode: forwards;
+	}
+
+
+.box-1-txt{
+	font-size: 25px;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	transform: skew(20deg);
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	}
+
+.box-2{
+	height: 70px;
+	width:  800px;
+	transform: skew(-20deg);
+	background:  #001f3f;
+	color: #FFFFFFFF;
+	opacity: 0.85;
+	position: relative;
+	top: 100%;
+	animation: box_2_animate 2.5s;
+	animation-fill-mode: forwards;
+	}
+
+
+.box-2-txt{
+	font-size: 25px;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	transform: skew(20deg);
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	}
+
+.box-3{
+	height: 70px;
+	width:  600px;
+	transform: skew(-20deg);
+	background: #0074D9;
+	color: #FFFFFFFF;
+	opacity: 0.85;
+	position: relative;
+	top: 100%;
+	animation: box_1_animate 2s;
+	animation-fill-mode: forwards;
+	}
+
+
+.box-3-txt{
+	font-size: 25px;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+	transform: skew(20deg);
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	}
+
+/* .box-1:hover{
+	background: #3D9970;
+}
+
+.box-2:hover{
+	background: #3D9970;
+} */
+

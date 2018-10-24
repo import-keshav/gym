@@ -1,0 +1,125 @@
+body{
+	background-image: url("http://localhost/gym/images/physiotherapy-595529.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	height: 90%;
+	width: 105%;
+	float: center;
+	}
+
+.top{
+	overflow: hidden;
+	margin-bottom: 10px;
+	margin-left: 950px;
+	}
+
+.home-button{
+	border: none;
+	transform: skew(-20deg);
+	width: 100px; 
+	height: 50px;
+	background: #001f3f;
+	color: #FFFF;
+	margin-left: 5px;
+	}
+
+.home-button:hover{
+	border-color: #FFFF;
+	-moz-box-shadow:    0 0 5px 0px #FFD700;
+	color: #FFFF;
+	background: #0074D9;
+	}
+
+.block{
+	background: rgba(250,250,250);
+	border-radius: 25px;
+	height: 600px;
+	width: 280px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+	margin-top: 50px;
+	}
+
+.signup-text{
+	font-family: "SourceSansPro-Bold";
+	font-size: 25px;
+	color: #4b2354;
+	font-weight: bold;
+	transform: scale(1,1);
+	line-height: 3.5;
+	}
+
+.entry{
+	border-radius: 18px;
+	border: none;
+	width: 190px;
+	height: 40px;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+	}
+
+input::placeholder{
+	font-family: SourceSansPro-Bold;
+	color: #4b2354;
+	font-size: 16px;
+	padding: 2px;
+	}
+
+.select{
+	width: 190px;
+	height: 40px
+	font-family: SourceSansPro-Bold";
+	font-size: 2000px;
+	font-weight: bold;
+	color: #4b2354;
+	margin-bottom: 20px;
+	}
+
+.select-box{
+	border: none;
+	border-radius: 5px;
+	width: 100px;
+	height: 40px;
+	-webkit-box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.2);
+	-moz-appearance: none;
+	}
+
+.submit:enabled{
+	border-radius: 20px;
+	height: 45px;
+	width: 100px;
+	border: none;
+	background: #001f3f;
+	color: #FFFF;
+	box-shadow: 0.5px 0.5px 1px 1px #ccc;
+  -webkit-box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.3);
+  margin-top: 1px;
+  transform: scale(1,1);
+  text-shadow: 0.5px 0.5px 1px 1px #ccc;
+	}
+
+.submit:hover{
+	background: #0074D9;
+}
+
+.submit:disabled{
+	border-radius: 20px;
+	height: 45px;
+	width: 100px;
+	border: none;
+	color: #FFFF;
+	box-shadow: 0.5px 0.5px 1px 1px #ccc;
+  -webkit-box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.3);
+  margin-top: 1px;
+  transform: scale(1,1);
+  text-shadow: 0.5px 0.5px 1px 1px #ccc;
+	background: #111111;
+}
+	
+.error{
+	margin-top: -10px;
+	color: #FF4136;
+	}
+
