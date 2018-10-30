@@ -1,0 +1,42 @@
+body{
+	padding:0px;
+	margin:0px;
+	}
+
+.top{
+  overflow: hidden;
+	background: #001f3f;
+}
+
+.logo-image{
+	height: 70px;
+	}
+	
+.select-box{
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+  height: 35px;
+  position: relative;
+  top: 0px;
+  left: 85px;
+  -moz-appearance: none;
+  background:  #e6e2d3;
+  }
+  
+
+.search-bar{
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  height: 35px;
+  width: 450px;
+  position: relative;
+  top: 0px;
+  left: 80px;
+  }
+  
+.search-icon{
+  position: relative;
+  top: 0px;
+  left: 50px;
+  height: 20px;
+  }
