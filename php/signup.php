@@ -18,7 +18,7 @@
 			<form method="post" action="location.href='create.php">
 			
 				<center>
-					<div class="block" align="center">
+					<div class="block" align="center" id="signup_template">
 						<div class="signup-text">
 							Sign Up
 						</div>
@@ -61,7 +61,7 @@
 							<input type="password" class="entry" placeholder="password" name="password" id="6" required oninput="password_method()" onfocusout="confirm_password()">
 						</div>
 						<div>
-							<p id="password" class="invalid-date"></p>
+							<p id="password" class="error"></p>
 						</div>
 						<div>
 							<input type="reset"  class="submit"  value="Reset">&nbsp;&nbsp;<input type="submit"  id="submit_button" class="submit"  value="SIGN UP">
