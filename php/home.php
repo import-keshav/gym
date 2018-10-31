@@ -66,20 +66,24 @@
 			</div>
 		</div>
 		<div class="bottom" >
-			<div class="box-1">
-				<div class="box-1-txt">
-					<center><p>ARE YOU READY TO CHANGE YOURSELF ?</p><center>
-				</div>
-			</div>
-			<div class="box-2">
-				<div class="box-2-txt">
-					<center><p>CHANGE YOURSELF AND TRY YOUR WORKPUT AT OUR GYM !</p><center>
-				</div>
-			</div>
-		</div>
+				<div class="box-3">
+					<div class="box-3-txt">
+						<center><p>BE ADDICTED TO CRUSHING YOUR GOALS</p><center>
+					</div> <!-- box-3-txt -->
+				</div>	<!-- box-3 -->
+				<div class="box-2">
+					<div class="box-2-txt">
+						<center><p>CHANGE YOURSELF AND TRY YOUR WORKPUT AT OUR GYM !</p><center>
+					</div> <!-- box-2-txt -->
+				</div> <!-- box-2 -->
+				<div class="box-1">
+					<div class="box-1-txt">
+						<center><p>ARE YOU READY TO CHANGE YOURSELF ?</p><center>
+					</div> <!-- box-2-txt -->
+				</div>  <!-- box-2 -->
+			</div> <!-- bottom -->
 	<body>
 </html>
-
 <?php
 	}
 ?>
