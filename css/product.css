@@ -14,7 +14,6 @@ body{
 	
 .select-box{
   border: none;
-  border-radius: 10px 0px 0px 10px;
   height: 35px;
   position: relative;
   top: 0px;
@@ -26,7 +25,6 @@ body{
 
 .search-bar{
   border: none;
-  border-radius: 0px 10px 10px 0px;
   height: 35px;
   width: 450px;
   position: relative;
@@ -39,4 +37,67 @@ body{
   top: 0px;
   left: 50px;
   height: 20px;
+  }
+  
+.column{
+  float: left;
+  /*background: red;*/
+  width: 33.33%;
+  }
+
+.row:after{
+   content: "";
+   display: table;
+   clear: both;
+  }
+  
+.first_template{
+  background-image: url("http://localhost/gym/images/image1.jpeg");
+  background-size: cover;
+	background-repeat: no-repeat;
+	height:100%;
+	width: 105%;
+	position: relative;
+	overflow: hidden;
+  }
+  
+.arrow_left_container{
+   background: transparent;
+   width: 50px;
+   height: 100px;
+   position: relative;
+   left: 0px;
+   top: 100px;
+  }
+  
+.arrow_right_container{
+   background: transparent;
+   width: 50px;
+   height: 100px;
+   position: relative;
+   left: 1310px;
+  }
+  
+.arrow_left{
+  border: solid white;
+  width: 50px;
+  height: 50px;
+  border-width: 0 3px 3px 0;
+  position: relative;
+  left: 20px;
+  transform: rotate(135deg);
+  display: inline-block;
+  padding: 3px;
+  }
+  
+.arrow_right{
+  border: solid white;
+  width: 50px;
+  height: 50px;
+  border-width: 0 3px 3px 0;
+  position: relative;
+  left: -25px;
+  transform: rotate(-45deg);
+  display: inline-block;
+  padding: 3px;
   }
