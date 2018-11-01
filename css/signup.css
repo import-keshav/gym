@@ -18,7 +18,7 @@ body{
 .home-button{
 	border: none;
 	transform: skew(-20deg);
-	width: 100px; 
+	width: 100px;
 	height: 50px;
 	background: #001f3f;
 	color: #FFFF;
@@ -35,15 +35,15 @@ body{
 .block{
 	background: rgba(250,250,250);
 	border-radius: 25px;
-	height: 600px;
-	width: 280px;
+	height: 500px;
+	width: 900px;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 	margin-top: 50px;
 	}
 
 .signup-text{
 	font-family: "SourceSansPro-Bold";
-	font-size: 25px;
+	font-size: 30px;
 	color: #4b2354;
 	font-weight: bold;
 	transform: scale(1,1);
@@ -58,6 +58,7 @@ body{
 	margin-bottom: 20px;
 	-webkit-box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.2);
   text-align: center;
+	margin-left: 50px;
 	}
 
 input::placeholder{
@@ -117,9 +118,8 @@ input::placeholder{
   text-shadow: 0.5px 0.5px 1px 1px #ccc;
 	background: #111111;
 }
-	
+
 .error{
 	margin-top: -10px;
 	color: #FF4136;
 	}
-
