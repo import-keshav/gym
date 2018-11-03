@@ -7,37 +7,35 @@
 <html>
 	<head>
 		<title>Home</title>
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="http://localhost/gym/css/home.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-			<div class="top">
-					<!-- <div class="notice">
-					</div> -->
-					<img src="http://localhost/gym/images/logo-magic.png" class="logo-image">
-					<input type="submit"  class="button" value="Help">
-					<input type="submit"  class="button" value="About" onclick="location.href='http://localhost/gym/php/about.php'">
-					<input type="submit" class="button" value="SignUp" onclick="location.href='http://localhost/gym/php/signup.php'">
-					<input type="submit" class="button" value="Login" onclick="location.href='http://localhost/gym/php/login.php'">
-					<input type="submit"  class="button" value="Products" onclick="location.href='http://localhost/gym/php/product.php'">
-			</div> <!-- top -->
-			<div class="bottom" >
-				<div class="box-3">
-					<div class="box-3-txt">
-						<center><p>BE ADDICTED TO CRUSHING YOUR GOALS</p><center>
-					</div> <!-- box-3-txt -->
-				</div>	<!-- box-3 -->
-				<div class="box-2">
-					<div class="box-2-txt">
-						<center><p>CHANGE YOURSELF AND TRY YOUR WORKPUT AT OUR GYM !</p><center>
-					</div> <!-- box-2-txt -->
-				</div> <!-- box-2 -->
-				<div class="box-1">
-					<div class="box-1-txt">
-						<center><p>ARE YOU READY TO CHANGE YOURSELF ?</p><center>
-					</div> <!-- box-2-txt -->
-				</div>  <!-- box-2 -->
-			</div> <!-- bottom -->
-	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Logo -->
+				<div class="navbar-header">
+					<img src="http://localhost/gym/images/logo-magic.png" class="logo">
+				</div>
+				<!-- Menu Items -->
+				<div>
+					<ul class="nav navbar-nav">
+						<li class="active-2"><a herf="#"><span class="navbar-items">Home</span></a></li>
+						<li><a herf="#"><span class="navbar-items">Products</span></a></li>
+					</ul>
+					<!-- profile drop down -->
+						<li class="dropdown">
+							
+						<li><a herf="#"><span class="navbar-items">Profile</span></a></li>
+				</div>
+				<!-- 
+			</div>
+		</nav>
+	</body>
 </html>
 
 <?php
@@ -47,43 +45,6 @@
 			$username = $_SESSION['username'];
 ?>
 
-<html>
-	<head>
-		<title>Home</title>
-		<link rel="stylesheet" href="http://localhost/gym/css/home.css">
-	</head>
-	<body bgcolor="001f3f">
-		<div class="top-login">
-			<img src="http://localhost/gym/images/logo-magic.png" class="logo-image-2" onclick="location.href='http://localhost/gym/php/home.php'">
-			<input type="submit"  class="home-button" value="Products" onclick="location.href='http://localhost/gym/php/product.php'">
-			<input type="submit"  class="home-button" value="Blogs" onclick="location.href='http://localhost/gym/php/help.php'">
-			<input type="submit"  class="home-button" value="DietPlan" onclick="location.href='http://localhost/gym/php/help.php'">
-			<input type="submit"  class="home-button" value="About" onclick="location.href='http://localhost/gym/php/about.php'">
-			<input type="submit"  class="home-button" value="Help" onclick="location.href='http://localhost/gym/php/help.php'">
-			<div class="username-box">
-			
-				<p><span class="username">Keshav</span></p>
-			</div>
-		</div>
-		<div class="bottom" >
-				<div class="box-3">
-					<div class="box-3-txt">
-						<center><p>BE ADDICTED TO CRUSHING YOUR GOALS</p><center>
-					</div> <!-- box-3-txt -->
-				</div>	<!-- box-3 -->
-				<div class="box-2">
-					<div class="box-2-txt">
-						<center><p>CHANGE YOURSELF AND TRY YOUR WORKPUT AT OUR GYM !</p><center>
-					</div> <!-- box-2-txt -->
-				</div> <!-- box-2 -->
-				<div class="box-1">
-					<div class="box-1-txt">
-						<center><p>ARE YOU READY TO CHANGE YOURSELF ?</p><center>
-					</div> <!-- box-2-txt -->
-				</div>  <!-- box-2 -->
-			</div> <!-- bottom -->
-	<body>
-</html>
 <?php
 	}
 ?>
