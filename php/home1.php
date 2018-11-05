@@ -10,7 +10,7 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     	
 		<title>Home</title>
-		<link rel="stylesheet" href="http://localhost/gym/css/home.css">
+		<link rel="stylesheet" href="http://localhost/gym/css/home1.css">
 	</head>
 	<body>
 			<div class="top">
