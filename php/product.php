@@ -17,8 +17,8 @@
 					<img src="http://localhost/gym/images/logo-magic.png" class="logo-image" onclick="go_home()">
 				</div>
 				<div class="col-md-6">
-					<input type="text" class="search-bar" placeholder="Search...">
-					<img src="http://localhost/gym/images/search.jpeg" class="search_icon">
+					<input type="text" class="search-bar" placeholder="Search..." onkeypress="search_products(event)">
+					<img src="http://localhost/gym/images/search.jpeg" class="search_icon" onclick="search_products(99)">
 				</div>
 				<div class="col-md-1">
 					<nav class="navbar dropdown_display">
@@ -61,37 +61,57 @@
 		</div>
 		<div class="container-fluid bottom">
 			<div class="row template_1">
-				<div class="col-md-2"></div>
-				<div class="col-md-1"></div>
 				<div class="col-md-2">
-					<div class="row">
-						<div class="col-md-12">
+					<p><span class="view_offers">View Offers</span></p>
+					<button class="button_view_all">View All</button>
+				</div>
+				<div class="col-md-1">
+					<div class="arrow">
+						<i class="left_arrow"></i>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="row" style="width: 160px; height: 200px;">
+						<div class="col-md-12"> 	
 							<img src="http://localhost/gym/images/product1.jpeg" class="template_1_products">
 						</div>
 					</div>
 					<div class="row">
-						<p>Optimum Nutrition Gold Standard 100% Whey Protein </p>
+						<div class="col-md-12">
+							<p class="product_text">Optimum Nutrition Gold Standard 100% Whey Protein </p>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-2">
-					<div class="row">
+					<div class="row" style="width: 160px; height: 200px;">
 						<div class="col-md-12">
 							<img src="http://localhost/gym/images/product2.jpeg" class="template_1_products">
 						</div>
 					</div>
 					<div class="row">
-						<p>MuscleBlaze Super Gainer XXL Weight Gainers</p>
+						<div class="col-md-12">
+							<p class="product_text">MuscleBlaze Super Gainer XXL Weight Gainers</p>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-2">
-					<div class="row">
+					<div class="row" style="width: 160px; height: 200px;">
 						<div class="col-md-12">
 							<img src="http://localhost/gym/images/product3.jpeg" class="template_1_products">
 						</div>
 					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<p class="product_text">Optimum Nutrition Micronized Creatine</p>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-1"></div>
 				<div class="col-md-2"></div>
+				<div class="col-md-1">
+					<div class="arrow">
+						<i class="right_arrow"></i>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
