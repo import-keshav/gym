@@ -17,7 +17,7 @@
 					<img src="http://localhost/gym/images/logo-magic.png" class="logo-image" onclick="go_home()">
 				</div>
 				<div class="col-md-6">
-					<input type="text" class="search-bar" placeholder="Search..." onkeypress="search_products(event)">
+					<input type="text" class="search-bar" placeholder="Search..." onkeypress="search_products(event)" id="search_values">
 					<img src="http://localhost/gym/images/search.jpeg" class="search_icon" onclick="search_products(99)">
 				</div>
 				<div class="col-md-1">
@@ -85,7 +85,7 @@
 				<div class="col-md-2">
 					<div class="row" style="width: 160px; height: 200px;">
 						<div class="col-md-12">
-							<img src="http://localhost/gym/images/product2.jpeg" class="template_1_products">
+							<center><img src="http://localhost/gym/images/product2.jpeg" class="template_1_products"></center>
 						</div>
 					</div>
 					<div class="row">

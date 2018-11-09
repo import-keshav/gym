@@ -19,7 +19,8 @@ function search_products(e)
   if(e.keyCode === 13)
     {
       e.preventDefault();
-      window.location.href = "http://localhost/gym/php/search_product.php";
+      var search_words = document.getElementById("search_values").value ;
+      window.location.href = "http://localhost/gym/php/search_product.php?search_words=" + search_words;
     }
   else if(e === 99)
   {
