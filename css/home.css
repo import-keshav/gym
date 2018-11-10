@@ -43,9 +43,9 @@ body{
 
 .signup_template{
 	position: relative;
-	top: 25px;
+	top: 80px;
 	width: 800px;
-	height: 500px;
+	height: 354px;
 	background-color: white;
 	box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.3);
 }
@@ -77,4 +77,79 @@ body{
 	font-size: 50px;
 	font-size-adjust: 0.2;
 	font-weight: bold;
+}
+
+.gender_text{
+	font-size: 20px;
+	font-weight: bold;
+	color: #A9A9A9;
+}
+
+.gender_select_box{
+	border: none;
+	height: 30px;
+	margin-left: 10px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+.select_arrow{
+	border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+.reset_button{
+	border-radius: 20px;
+	border: none;
+	background-color:  #0074D9;
+	color: white;
+	height: 40px;
+	width: 100px;
+	margin-left: 100px;
+	margin-top: 10px;
+}
+
+
+.reset_button:hover{
+	background-color:  #001f3f;
+}
+
+.next_button{
+	border-radius: 20px;
+	border: none;
+	background-color:  #0074D9;
+	color: white;
+	height: 40px;
+	width: 100px;
+	margin-left: 10px;
+}
+
+.next_button:hover{
+	background-color:  #001f3f;
+}
+
+.small_dot_button{
+	height: 20px;
+    width: 20px;
+    background-color:  #001f3f;
+    border-radius: 50%;
+    display: inline-block;
+    border: none;
+    margin-left: 10px;
+    position: relative;
+    top: 15px;
+    left: 150px;
+}
+
+.error{
+	margin-top: 10px;
+	color: #FF4136;
 }
