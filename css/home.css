@@ -136,6 +136,16 @@ select {
 	background-color:  #001f3f;
 }
 
+.next_button:disabled{
+	border-radius: 20px;
+	border: none;
+	color: white;
+	height: 40px;
+	width: 100px;
+	margin-left: 10px;
+	background: #111111;
+}
+
 .small_dot_button{
 	height: 20px;
     width: 20px;
@@ -152,4 +162,8 @@ select {
 .error{
 	margin-top: 10px;
 	color: #FF4136;
+}
+
+.drop.down-arrow{
+    pointer-events: none;
 }

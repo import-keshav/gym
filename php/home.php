@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -10,11 +13,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="http://localhost/gym/javascript/home.js"></script>
-		<script>
-			function select_gender(){
-				document.getElementById("select_gender").show();
-			}
-		</script>
 	</head>
 	<body>
 		<div class="container-fluid top-bar">
@@ -26,11 +24,11 @@
 					<div class="col-md-2"></div>
 					<div class="col-md-2">
 						<p class="login_text">username or email</p>
-						<input type="text" class="login_box" name="username" placeholder="username or email" required>
+						<input type="text" class="login_box" name="username" placeholder="username or email">
 					</div>
 					<div class="col-md-2">
 						<p class="login_text">Password</p>
-						<input type="text" class="login_box" name="password" placeholder="Password" required>
+						<input type="text" class="login_box" name="password" placeholder="Password">
 					</div>
 					<div class="col-md-1">
 						<input type="submit" value="Login" class="login_button">
@@ -39,7 +37,7 @@
 			</form>
 		</div>
 		<div class="container-fluid bottom">
-			<div class="container-fluid signup_template">
+			<div class="container-fluid signup_template" id="signup_template_1">
 				<form method="post" action="http://localhost/gym/php/validation.php">
 					<div class="row">
 						<div class="col-md-4" style="padding:0px; margin:0px;">
@@ -53,19 +51,20 @@
 							</div>
 							<div class="row" style="height: 40px; position: relative; margin-top: 30px; left: -10px;">
 								<div class="col-md-12">
-									<input type="text" class="name_input_box" placeholder="Name" name="name" id='1' oninput="name_method()" required>
+									<input type="text" class="name_input_box" placeholder="Name" name="name" id='1' oninput="name_method()" onfocusout="confirm_name()">
 									<p class="error" id="11"></p>
 								</div>
 							</div>
 							<div class="row" style="height: 40px; position: relative; left: -10px;">
 								<div class="col-md-12">
-									<input type="text" class="name_input_box" placeholder="email" name="email" id='3' required oninput="email_method()">
+									<input type="text" class="name_input_box" placeholder="email" name="email" id='3' oninput="email_method()">
 									<p class="error" id="33"></p>
 								</div>
 							</div>
 							<div class="row" style="height: 40px; position: relative; left: -10px;">
 								<div class="col-md-12">
-									<input type="text" class="name_input_box" placeholder="Mobile Number" required>
+									<input type="text" class="name_input_box" placeholder="Mobile Number" id="7" oninput="mobile_method()">
+									<p class="error" id="mobile_no"></p>
 								</div>
 							</div>
 							<div class="row" style="height: 40px; position: relative; left: -10px;">
@@ -76,27 +75,108 @@
 										<option value="female">Female</option>
 										<option value="other">Other</option>
 									</select>
-									<div class="select_arrow" onclick="select_gender()"></div>
+									<div class="select_arrow  drop down-arrow"></div>
+									<p class="error" id="not_fill_1"></p>
 								</div>
 							</div>
 							<div class="row" style="height: 40px; position: relative; left: -10px;">
+								<div class="col-md-12">
+									<input type="reset" value="Reset" class="reset_button"><input type="button" value="Next" class="next_button" id="next_button_1" onclick="go_template_2()"> 
+								</div>
+							</div>
+							<div class="row" style="height: 40px; position: relative; left: -10px;">
+								<div class="col-md-12">
+									<input type="button" class="small_dot_button" id="dot_1_1"><input type="button" class="small_dot_button" id="dot_2_1"><input type="button" class="small_dot_button" id="dot_3_1"> 
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+			<div class="container-fluid signup_template" id="signup_template_2">
+				<div class="row">
+					<div class="col-md-4" style="padding:0px; margin:0px;">
+						<img src="http://localhost/gym/images/fruits.jpg" class="img-fluid" style="max-width: 100%; height: 500%;">
+					</div>
+					<div class="col-md-8" >
+						<div class="row">
+							<div class="Col-md-12">
+								<p class="create_account_text">Create an account</p>
+							</div>
+						</div>
+						<div class="row" style="height: 40px; position: relative; margin-top: 30px; left: -10px;">
+							<div class="col-md-12">
+								<input type="text" class="name_input_box" placeholder="Date Of Birth (YYYY / MM / DD) " name="date" id='4' oninput="date_method()" style="margin-top: 10px;">
+								<p class="error" id="44"></p>
+							</div>
+						</div>
+						<div class="row" style="height: 40px; position: relative; left: -10px;">
+							<div class="col-md-12">
+								<input type="text" class="name_input_box" placeholder="Body Mass Index ( BMI )" name="bmi" id='5' oninput="bmi_method()" style="margin-top: 10px;">
+								<p class="error" id="55"></p>
+							</div>
+						</div>
+						<div class="row" style="height: 40px; position: relative; left: -10px;">
+							<div class="col-md-12">
+								<input type="text" class="name_input_box" placeholder="Address" id="6" style="margin-top: 10px;">
+								<p class="error" id="not_fill_2"></p>
+							</div>
+						</div>
+						<div class="row" style="height: 40px; position: relative; left: -10px; margin-top: 30px;">
+							<div class="col-md-12">
+								<input type="reset" value="Reset" class="reset_button"><input type="button" value="Next" class="next_button" id="next_button_2" onclick="go_template_3()"> 
+							</div>
+						</div>
+						<div class="row" style="height: 40px; position: relative; left: -10px;">
+							<div class="col-md-12">
+								<input type="button" class="small_dot_button" id="dot_1_2"><input type="button" class="small_dot_button" id="dot_2_2"><input type="button" class="small_dot_button" id="dot_3_2"> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid signup_template" id="signup_template_3">
+					<div class="row">
+						<div class="col-md-4" style="padding:0px; margin:0px;">
+							<img src="http://localhost/gym/images/fruits.jpg" class="img-fluid" style="max-width: 100%; height: 500%;">
+						</div>
+						<div class="col-md-8" >
+							<div class="row">
+								<div class="Col-md-12">
+									<p class="create_account_text">Create an account</p>
+								</div>
+							</div>
+							<div class="row" style="height: 40px; position: relative; margin-top: 30px; left: -10px;">
+								<div class="col-md-12">
+									<input type="text" class="name_input_box" placeholder=" username " name="date" style="margin-top: 20px;" required>
+									<p class="error" id="44"></p>
+								</div>
+							</div>
+							<div class="row" style="height: 40px; position: relative; left: -10px; margin-top: 30px;">
+								<div class="col-md-12">
+									<input type="password" class="name_input_box" placeholder=" password" name="bmi" id='5' oninput="password_method()" required>
+									<p class="error" id="password"></p>
+								</div>
+							</div>
+							<div class="row" style="height: 40px; position: relative; left: -10px; margin-top: 30px;">
 								<div class="col-md-12">
 									<input type="reset" value="Reset" class="reset_button"><input type="submit" value="Next" class="next_button" id="submit_button"> 
 								</div>
 							</div>
 							<div class="row" style="height: 40px; position: relative; left: -10px;">
 								<div class="col-md-12">
-									<input type="button" class="small_dot_button" id="dot_1"><input type="button" class="small_dot_button" id="dot_2"><input type="button" class="small_dot_button" id="dot_3"> 
+									<input type="button" class="small_dot_button" id="dot_1_3"><input type="button" class="small_dot_button" id="dot_2_3"><input type="button" class="small_dot_button" id="dot_3_3"> 
 								</div>
 							</div>
-							<script>
-								document.getElementById("dot_2").style.background = "#0074D9";
-								document.getElementById("dot_3").style.background = "#0074D9";
-							</script>
 						</div>
 					</div>
 				</form>
 			</div>
+			<script>
+					document.getElementById("dot_2_1").style.background = "#0074D9";
+					document.getElementById("dot_3_1").style.background = "#0074D9";
+					//document.getElementById("signup_template_2").style.visibility = "hidden";
+					//document.getElementById("signup_template_3").style.visibility = "hidden";
+			</script>
 		</div>
 	</body>
 </html>
