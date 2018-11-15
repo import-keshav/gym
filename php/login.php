@@ -4,19 +4,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Home</title>
+		<title>Login</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="http://localhost/gym/css/home.css">
+		<link rel="stylesheet" href="http://localhost/gym/css/login.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="http://localhost/gym/javascript/home.js"></script>
+		<script src="http://localhost/gym/javascript/login.js"></script>
 	</head>
 	<body>
 		<div class="container-fluid top-bar">
-			<form method="post" action="http://localhost/gym/php/product.php">
+			<form method="post" action="#">
 				<div class="row">
 					<div class="col-md-5">
 						<img src="http://localhost/gym/images/logo-magic.png" class="logo">
@@ -38,7 +38,7 @@
 		</div>
 		<div class="container-fluid bottom">
 			<div class="container-fluid signup_template" id="signup_template_1">
-				<form method="post" action="http://localhost/gym/php/validation.php">
+				<form method="post" action="#">
 					<div class="row">
 						<div class="col-md-4" style="padding:0px; margin:0px;">
 							<img src="http://localhost/gym/images/fruits.jpg" class="img-fluid" style="max-width: 100%; height: 500%;">
@@ -147,13 +147,13 @@
 							</div>
 							<div class="row" style="height: 40px; position: relative; margin-top: 30px; left: -10px;">
 								<div class="col-md-12">
-									<input type="text" class="name_input_box" placeholder=" username " name="date" style="margin-top: 20px;" required>
-									<p class="error" id="44"></p>
+									<input type="text" class="name_input_box" placeholder="Username " style="margin-top: 20px;" oninput="username_method()" id="username_box" required>
+									<p class="error" id="username_error"></p>
 								</div>
 							</div>
 							<div class="row" style="height: 40px; position: relative; left: -10px; margin-top: 30px;">
 								<div class="col-md-12">
-									<input type="password" class="name_input_box" placeholder=" password" name="bmi" id='5' oninput="password_method()" required>
+									<input type="password" class="name_input_box" placeholder="Password" name="bmi" id='password_box' oninput="password_method()" required>
 									<p class="error" id="password"></p>
 								</div>
 							</div>

@@ -1,124 +1,169 @@
 body{
-	background-image: url("http://localhost/gym/images/physiotherapy-595529.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-	height: 90%;
-	width: 105%;
+	padding:0px;
+	margin:0px;
+	height: 100%
+}
+
+.top-bar{
+	background-color:  #001f3f;
+	height: 60px;
+	box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.19);
+}
 	
-	}
-
-.top{
-	overflow: hidden;
-	margin-bottom: 100px;
-	margin-left: 950px;
-	}
-
-.home-button{
-	border: none;
-	transform: skew(-20deg);
-	width: 100px; 
+.logo{
+	position: relative;
+	top: 5px;
 	height: 50px;
-	background: transparent;
-	color: #FFFF;
-	font-weight: bold;
-	margin-left: 5px;
-	}
-
-.home-button:hover{
-	background: #0074D9;
-	}
-
-.sign{
-	font-family: SourceSansPro-Bold;
-	font-size: 25px;
-	color: #4b2354;
-	line-height: 1.2;
-	text-align: center;
-	transform: scale(1, 1);
-	font-weight: bold;
-	margin-top: 18px;
-	margin-bottom: 20px;
-	}
-		
-.login-form {
-	border-radius: 25px;
-	border: 2px solid #FFF;
-	padding: 20px; 
 	width: 200px;
-	height: 250px; 
-	background: rgba(255,255,255);
-	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-	margin-left: 500px;
-	}
-		
-.login-box {
-	border: 2px solid #FFF;
-	padding: 20px; 
-	width: 200px;
-	height: 20px;    
-	border-radius: 20px;
-	box-shadow: 0.5px 0.5px 1px 1px #ccc;
-	background: transparent;
-  -webkit-box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.2);  	
-  margin-bottom: 20px;		
-	}
+}
 
-input::placeholder{
-	font-family: SourceSansPro-Bold;
-	font-size: 16px;
-	color: #4b2354; 
-	}
-		
-.submit{
-	background-color: #001f3f;
-	border: none;		
+.login_text{
+	position: relative;
 	color: white;
-	width: 160px;
-	padding: 18px;
-	text-align: center;
-	display: inline-block;
-	font-size: 16px;
-	margin: 6px 20px;
-	border-radius: 50px;
-	cursor: pointer;	
-	-webkit-box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.1);  	
-	}
+	font-size-adjust: 0.6;
+	top: 2px;
+}
 
-.submit:hover{
+.login_box{
+	border: none;
+}
+
+.login_button{
+	position: relative;
+	top: 30px;
+	left: -20px;
+	color: white;
 	background-color: #0074D9;
-	}
+	border: none;
+}
 
-.invalid-login-box {
-	border: 2px solid #FFF;
-	padding: 20px; 
-	width: 200px;
-	height: 20px;    
-	border-radius: 20px;
-	box-shadow: 0.5px 0.5px 1px 1px #ccc;
-	background: transparent;
-  -webkit-box-shadow: 0 5px 30px 0px rgba(0, 0, 0, 0.2);  	
-  margin-bottom: 20px;
-  color: red;		
-	}
+.bottom{
+	height: 100%;
+}
 
-.invalid-sign{
-	font-family: SourceSansPro-Bold;
-	font-size: 25px;
-	color: #FF4136;
-	line-height: 1.2;
-	text-align: center;
-	transform: scale(1, 1);
+.signup_template{
+	position: relative;
+	top: 80px;
+	width: 800px;
+	height: 354px;
+	background-color: white;
+	box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.3);
+}
+
+.signup_template:hover{
+	box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.5);	
+}
+
+.create_account_text{
+	color: #001f3f;
+	font-size: 40px;
+	position: relative;
+	top: 30px;
+}
+
+.create_account_text:hover{
+	color: #0074D9;
+}
+
+.name_input_box{
+	border: none;
+	box-shadow: 0px 1px rgb(0,0,0,0.2);
+	width: 70%;
+	left: -10px;
+}
+
+.name_input_box::placeholder{
+	position: relative; 
+	font-size: 50px;
+	font-size-adjust: 0.2;
 	font-weight: bold;
-	margin-top: 18px;
-	margin-bottom: 20px;
-	}
+}
+
+.gender_text{
+	font-size: 20px;
+	font-weight: bold;
+	color: #A9A9A9;
+}
+
+.gender_select_box{
+	border: none;
+	height: 30px;
+	margin-left: 10px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+.select_arrow{
+	border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+.reset_button{
+	border-radius: 20px;
+	border: none;
+	background-color:  #0074D9;
+	color: white;
+	height: 40px;
+	width: 100px;
+	margin-left: 100px;
+	margin-top: 10px;
+}
 
 
-.invalid-login-box::placeholder{
-	font-family: SourceSansPro-Bold;
-	font-size: 16px;
-	color: red; 
-	}
-	
+.reset_button:hover{
+	background-color:  #001f3f;
+}
+
+.next_button{
+	border-radius: 20px;
+	border: none;
+	background-color:  #0074D9;
+	color: white;
+	height: 40px;
+	width: 100px;
+	margin-left: 10px;
+}
+
+.next_button:hover{
+	background-color:  #001f3f;
+}
+
+.next_button:disabled{
+	border-radius: 20px;
+	border: none;
+	color: white;
+	height: 40px;
+	width: 100px;
+	margin-left: 10px;
+	background: #111111;
+}
+
+.small_dot_button{
+	height: 20px;
+    width: 20px;
+    background-color:  #001f3f;
+    border-radius: 50%;
+    display: inline-block;
+    border: none;
+    margin-left: 10px;
+    position: relative;
+    top: 15px;
+    left: 150px;
+}
+
+.error{
+	margin-top: 10px;
+	color: #FF4136;
+}
+
+.drop.down-arrow{
+    pointer-events: none;
+}
