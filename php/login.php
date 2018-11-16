@@ -13,6 +13,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="http://localhost/gym/javascript/login.js"></script>
+		<script type="text/javascript" src="http://localhost/gym/javascript/jquery.js"></script>
 	</head>
 	<body>
 		<div class="container-fluid top-bar">
@@ -174,8 +175,12 @@
 			<script>
 					document.getElementById("dot_2_1").style.background = "#0074D9";
 					document.getElementById("dot_3_1").style.background = "#0074D9";
-					//document.getElementById("signup_template_2").style.visibility = "hidden";
-					//document.getElementById("signup_template_3").style.visibility = "hidden";
+					$(function()
+							{
+								$('#signup_template_2').hide();
+								$('#signup_template_3').hide();
+							}
+						);
 			</script>
 		</div>
 	</body>

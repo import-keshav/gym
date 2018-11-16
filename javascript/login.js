@@ -359,10 +359,14 @@ function go_template_2()
 				document.getElementById("dot_2_2").style.background = "#001f3f";
 				document.getElementById("dot_3_2").style.background = "#0074D9";
 				document.getElementById("signup_template_1").style.height="354px";
-				document.getElementById("signup_template_1").style.visibility = "hidden";
-				document.getElementById("signup_template_2").style.visibility = "visible";
-				document.getElementById("signup_template_2").style.top = "-275px";
-				document.getElementById("signup_template_2").style.position = "relative"
+				$(function(){
+					$('#signup_template_1').slideUp(1000 , 
+						function()
+							{
+								$('#signup_template_2').slideDown(1000);
+							}
+					);				
+				});
 				
 			}
 	}
@@ -379,12 +383,16 @@ function go_template_3()
 			{
 				document.getElementById("signup_template_2").style.height="354px";
 				document.getElementById("next_button_2").disabled=false;
-				document.getElementById("signup_template_2").style.visibility = "hidden";
-				document.getElementById("signup_template_3").style.visibility = "visible";
-				document.getElementById("signup_template_3").style.position = "relative"
-				document.getElementById("signup_template_3").style.top = "-628px";
 				document.getElementById("dot_1_3").style.background = "#0074D9";
 				document.getElementById("dot_2_3").style.background = "#0074D9";
 				document.getElementById("dot_3_3").style.background = "#001f3f";
+				$(function(){
+					$('#signup_template_2').slideUp(1000 , 
+						function()
+							{
+								$('#signup_template_3').slideDown(1000);
+							}
+					);				
+				});
 			}
 	}

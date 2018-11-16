@@ -54,6 +54,17 @@ body{
 	box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.5);	
 }
 
+#signup_template_2{
+	position: absolute;
+	left: 283px;
+	top: 139px;
+}
+
+#signup_template_3{
+	position: absolute;
+	left: 283px;
+	top: 139px;
+}
 .create_account_text{
 	color: #001f3f;
 	font-size: 40px;
