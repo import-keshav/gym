@@ -2,7 +2,7 @@ var backgound_image_index = 1;
 
 function go_home()
   {
-    window.location.href = "http://localhost/gym/php/home1.php";  
+    window.location.href = "http://localhost/gym/php/home.php";  
   }
   
 function change_background_image_towards_left()

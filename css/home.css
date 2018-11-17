@@ -1,0 +1,133 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+.top_bar{
+	height: 50px;
+	width: 100%;
+	background: #001f3f;
+	position: fixed;
+	overflow: hidden;
+	z-index: 1;
+	box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.19);
+}
+
+.logo{
+	position: relative;
+	top: 2px;
+	height: 50px;
+	width: 200px;
+}
+
+.top_bar_buttons{
+	color: white;
+	border: none;
+	height: 30px;
+	width: 100px;
+	background: #001f3f;
+	transform: skew(-20deg);
+	position: relative;
+	left: 700px;
+
+}
+
+.top_bar_buttons:hover{
+	background: #0074D9;;
+}
+
+.bottom{
+	position: fixed;
+	top: 50px;
+	width: 100%;
+}
+
+.slide_panel_1{
+	padding: 0px;
+	margin: 0px;
+}
+
+.slide_panel_1_1{
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	left: 0px;
+	border-right: 2px solid rgb(241, 241, 241);
+	height: 8000px;
+}
+
+.chat_logo{
+	size: cover;
+	overflow: hidden;
+	max-width: 130%;
+	max-height: 130%;
+	position: relative;
+	top: 50px;
+	left: -15px;
+}
+
+.search_logo{
+	size: cover;
+	overflow: hidden;
+	max-width: 130%;
+	max-height: 130%;
+	position: relative;
+	top: 80px;
+	left: -15px;
+}
+
+.user_logo{
+	size: cover;
+	overflow: hidden;
+	max-width: 130%;
+	max-height: 130%;
+	position: relative;
+	top: 110px;
+	left: -15px;
+}
+
+.community_logo{
+	size: cover;
+	overflow: hidden;
+	max-width: 130%;
+	max-height: 130%;
+	position: relative;
+	top: 130px;
+	left: -15px;
+}
+
+.slide_panel_1_2{
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	left: 0px;
+	border-right: 2px solid rgb(241, 241, 241);
+	overflow: auto;
+	height: 580px;
+}
+
+.all_converstaions{
+	position: relative;
+	top: 22px;
+	left: 20px;
+	color: rgb(162, 163, 163);
+	font-weight: 50px;
+	font-size-adjust: 0.6;
+}
+
+.slide_panel_2{
+	overflow: auto;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	left: 0px;
+	border-right: 2px solid rgb(241, 241, 241);
+	height: 580px;
+}
+
+.template{
+	height: 300px;
+	width: 100px;
+	background-color: red;
+	margin: 10px;
+}
