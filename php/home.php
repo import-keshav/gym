@@ -15,12 +15,16 @@
 	<body>
 		<div class="container-fluid top_bar">
 			<div class="row ">
-				<div class="col-md-12">
+				<div class="col-md-11">
 					<img src="http://localhost/gym/images/logo-magic.png" class="logo">
 					<input type="button" value="Products" class="top_bar_buttons" onclick="location.href='http://localhost/gym/php/product.php'">
 					<input type="button" value="Ask" class="top_bar_buttons" onclick="location.href='http://localhost/gym/php/ask.php'">
 					<input type="button" value="Find" class="top_bar_buttons" onclick="location.href='http://localhost/gym/php/find.php'">
 					<input type="button" value="Profile" class="top_bar_buttons" onclick="location.href='http://localhost/gym/php/profile.php'">
+				</div>
+				<div class="col-md-1" onclick="show_arrow_things()" id="2" style="height: 500px;">
+					<div class="arrow" onclick="show_arrow_things()">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -56,9 +60,24 @@
 				<div class="col-md-7 slide_panel_2">
 					<div class=template></div>
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-2" >
+					<span style="">bathla</span>
+					<div class="arrow_things" id="1">
+						<div style="height: 20px;">
+							<span class="settings">Settings</span>
+						</div>
+						<hr>
+						<div style="height: 20px">
+							<span class="logout">Logout</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+		<script>
+			$(function(){
+				$("#1").hide();
+			});
+		</script>
 	</body>
 </html>
