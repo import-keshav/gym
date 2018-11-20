@@ -2,8 +2,10 @@ function check_name_method()
 	{
 		var x=document.getElementById('1');
 		var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?1234567890]/;
-		var check = format.test(x.value)
-		if(x.value=="")
+		var format_true = /[abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ]/;
+		var check = format.test(x.value);
+		var check2 = format_true.test(x.value)
+		if(x.value=="" || check2==true)
 			{
 				document.getElementById("11").innerHTML="";
 				document.getElementById("next_button_1").disabled=false;

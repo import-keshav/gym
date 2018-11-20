@@ -22,8 +22,8 @@
 					<input type="button" value="Find" class="top_bar_buttons" onclick="location.href='http://localhost/gym/php/find.php'">
 					<input type="button" value="Profile" class="top_bar_buttons" onclick="location.href='http://localhost/gym/php/profile.php'">
 				</div>
-				<div class="col-md-1" onclick="show_arrow_things()" id="2" style="height: 500px;">
-					<div class="arrow" onclick="show_arrow_things()">
+				<div class="col-md-1" onmouseover="show_arrow_things()" onmouseout="show_arrow_things()" id="2" style="height: 500px;">
+					<div class="arrow">
 					</div>
 				</div>
 			</div>
@@ -49,6 +49,8 @@
 						<div class="row" >
 							<div class="col-md-12">
 								<span class="all_converstaions">ALL CONVERSATIONS</span><br>
+								<div class="friend_list_template"><span class="friend_name">Friends</span></div>
+								<div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div><div class="friend_list_template"><span class="friend_name">Friends</span></div>
 							</div>
 						</div>
 						<div class="row" style="margin-top: 20px;">
@@ -58,18 +60,18 @@
 					</div>
 				</div>
 				<div class="col-md-7 slide_panel_2">
-					<div class=template></div>
+					<div class=template><span class="blog_text">Blogs</span></div>
+					<div class=template><span class="blog_text">Blogs</span></div>
+					<div class=template><span class="blog_text">Blogs</span></div>
+					<div class=template><span class="blog_text">Blogs</span></div>
+					<div class=template><span class="blog_text">Blogs</span></div>
+					<div class=template><span class="blog_text">Blogs</span></div>
 				</div>
 				<div class="col-md-2" >
 					<span style="">bathla</span>
-					<div class="arrow_things" id="1">
-						<div style="height: 20px;">
-							<span class="settings">Settings</span>
-						</div>
-						<hr>
-						<div style="height: 20px">
-							<span class="logout">Logout</span>
-						</div>
+					<div class="arrow_things" onmouseover="show_arrow_things()" onmouseout="show_arrow_things()" id="1">
+						<input type="button" class="settings" value="Settings" onclick="location.href='http://localhost/gym/php/settings.php'"><br>
+						<input type="button" class="logout" value="Logout" onclick="location.href='http://localhost/gym/php/logout.php'">
 					</div>
 				</div>
 			</div>

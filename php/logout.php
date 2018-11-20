@@ -5,5 +5,5 @@
 	
 	session_destroy();
 	
-	header("location:http://localhost/gym/php/home.php");
+	header("location:http://localhost/gym/php/login.php");
 ?>

@@ -56,22 +56,37 @@ body{
 	top: 0px;
 	right: 25px;
 	color: white;
+	box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
 }
 
 .settings{
 	font-size: 18px;
 	font-size-adjust: 0.5;
+	background: #0074D9;
 	position: relative;
-	left: 40px;
-	top: 6px;
+	border: solid white;
+	border-width: 0px 0px 1px 0px;
+	width: 100%;
+	height: 50%;
+}
+
+.settings:hover{
+	background: #001f3f;
 }
 
 .logout{
 	font-size: 18px;
 	font-size-adjust: 0.5;
 	position: relative;
-	left: 40px;
-	top: -15px;
+	background: #0074D9;
+	border: solid white;
+	border-width: 0px 0px 1px 0px;
+	width: 100%;
+	height: 50%;
+}
+
+.logout:hover{
+	background: #001f3f;
 }
 
 .bottom{
@@ -165,7 +180,26 @@ body{
 
 .template{
 	height: 300px;
-	width: 100px;
-	background-color: red;
+	width: 600px;
+	background-color: white;
 	margin: 10px;
+	box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.19);
+}
+
+.blog_text{
+	font-size: 60px;
+	position: relative;
+	color: #001f3f;
+	top: 80px;
+	left: 190px; 
+}
+
+.friend_list_template{
+	height: 40px;
+	width: 180px;
+	background-color: white;
+	position: relative;
+	top: 30px;
+	margin-top: 20px;
+	box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.19);
 }
