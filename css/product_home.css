@@ -8,15 +8,17 @@ body{
   padding:0px;
   margin:0px;
   top: 0px;
-  width: auto;
+  width: 110%;
   height: 60px;
-  position: relative;
+  position: fixed;
+  z-index: 1;
   left: 0px;
+  box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.19);
 }
 
 .logo-image{
   position: relative;
-  left: 50px;
+  left: 10px;
   height: 50px;
   width: 200px;
   top: 5px;
@@ -71,6 +73,14 @@ body{
 
 .dropdown_menu_hover:hover{
   background-color: #0074D9 !important;
+}
+
+.top_bar_2{
+  box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.19);
+  height: 40px;
+  position: fixed relative;
+  z-index: 2;
+  margin-top: 60px;
 }
 
 .bottom{

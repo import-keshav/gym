@@ -116,7 +116,7 @@ body{
 	max-height: 130%;
 	position: relative;
 	top: 50px;
-	left: -15px;
+	left: -27px;
 }
 
 .search_logo{
@@ -126,7 +126,7 @@ body{
 	max-height: 130%;
 	position: relative;
 	top: 80px;
-	left: -15px;
+	left: -25px;
 }
 
 .user_logo{
@@ -136,7 +136,7 @@ body{
 	max-height: 130%;
 	position: relative;
 	top: 110px;
-	left: -15px;
+	left: -25px;
 }
 
 .community_logo{
@@ -146,7 +146,12 @@ body{
 	max-height: 130%;
 	position: relative;
 	top: 130px;
-	left: -15px;
+	left: -25px;
+}
+
+.active{
+	border: solid #001f3f;;
+	border-width: 0px 0px 0px 5px;
 }
 
 .slide_panel_1_2{
@@ -159,6 +164,14 @@ body{
 	height: 580px;
 }
 
+.slidepanel_1_2_1{
+	display: none;
+}
+
+.active2{
+	display: block;
+}
+
 .all_converstaions{
 	position: relative;
 	top: 22px;
@@ -169,13 +182,14 @@ body{
 }
 
 .slide_panel_2{
-	overflow: auto;
+	overflow-y: auto;
 	margin: 0px;
 	padding: 0px;
 	position: relative;
 	left: 0px;
 	border-right: 2px solid rgb(241, 241, 241);
 	height: 580px;
+	margin-right: -14px !important;
 }
 
 .template{
@@ -202,4 +216,18 @@ body{
 	top: 30px;
 	margin-top: 20px;
 	box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.19);
+}
+
+.search_box{
+	position: relative;
+	top: 30px;
+	border: none;
+	margin-top: 20px;
+	caret-color: #0074D9;
+	font-size: 20px; 
+}
+
+.search_box::placeholder{
+	font-size: 15px; 
+
 }
