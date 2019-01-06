@@ -1,4 +1,4 @@
-from flask import *
+from flask import Flask , render_template , request
 from controller.validation_login import validate, create
 
 app = Flask(__name__)

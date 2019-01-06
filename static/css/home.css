@@ -104,49 +104,21 @@ body{
 	margin: 0px;
 	padding: 0px;
 	position: relative;
-	left: 0px;
+	left: -10px;
 	border-right: 2px solid rgb(241, 241, 241);
 	height: 8000px;
 }
 
-.chat_logo{
+.left_most_icons{
 	size: cover;
 	overflow: hidden;
-	max-width: 130%;
-	max-height: 130%;
+	max-width: 70%;
+	max-height: 70%;
+	margin-top: 20px;
+	margin-left: 20px;
 	position: relative;
 	top: 50px;
-	left: -27px;
-}
-
-.search_logo{
-	size: cover;
-	overflow: hidden;
-	max-width: 130%;
-	max-height: 130%;
-	position: relative;
-	top: 80px;
-	left: -25px;
-}
-
-.user_logo{
-	size: cover;
-	overflow: hidden;
-	max-width: 130%;
-	max-height: 130%;
-	position: relative;
-	top: 110px;
-	left: -25px;
-}
-
-.community_logo{
-	size: cover;
-	overflow: hidden;
-	max-width: 130%;
-	max-height: 130%;
-	position: relative;
-	top: 130px;
-	left: -25px;
+	left: -5px;
 }
 
 .active{
@@ -158,7 +130,6 @@ body{
 	margin: 0px;
 	padding: 0px;
 	position: relative;
-	left: 0px;
 	border-right: 2px solid rgb(241, 241, 241);
 	overflow: auto;
 	height: 580px;
@@ -216,6 +187,7 @@ body{
 	top: 30px;
 	margin-top: 20px;
 	box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.19);
+	left: 20px;
 }
 
 .search_box{
