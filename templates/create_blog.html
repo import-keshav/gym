@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<center>
+		<h3>Create blog</h3>
+	
+		<form method="POST" action="">
+			{{ form.csrf_token }}
+			<div>
+				<h5>{{ form.title.label }}</h5>
+			</div>
+			<div>
+				{{ form.title(style="width: 800px") }}
+			</div>
+			<div>
+				<h5>{{ form.content.label }}</h5>
+			</div>
+			<div>
+				{{ form.content(style="width: 800px; height: 200px") }}
+			</div>
+			<div>
+				{{ form.submit }}
+			</div>
+	</center>
+
+</body>
+</html>

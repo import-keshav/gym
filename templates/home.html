@@ -24,11 +24,14 @@
 		<div class="container-fluid top_bar">
 			<div class="row ">
 				<div class="col-md-11">
-					<img src="{{ url_for('static' , filename = 'images/logo-magic.png') }}" class="logo">
-					<input type="button" value="Products" class="top_bar_buttons" onclick="#">
-					<input type="button" value="Ask" class="top_bar_buttons" onclick="#">
-					<input type="button" value="Find" class="top_bar_buttons" onclick="#">
-					<input type="button" value="Profile" class="top_bar_buttons" onclick="#">
+					<form>
+						<img src="{{ url_for('static' , filename = 'images/logo-magic.png') }}" class="logo">
+						<button formaction="{{ url_for('create_blog') }}">Create Blog</button>
+						<button formaction="{{ url_for('products_home') }}" class="top_bar_buttons">Products</button>
+						<input type="button" value="Ask" class="top_bar_buttons" onclick="#">
+						<input type="button" value="Find" class="top_bar_buttons" onclick="#">
+						<input type="button" value="Profile" class="top_bar_buttons" onclick="#">
+					</form>
 				</div>
 				<div class="col-md-1" onmouseover="show_arrow_things()" onmouseout="show_arrow_things()" id="2" style="height: 500px;">
 					<div class="arrow">
@@ -97,9 +100,25 @@
 				<!-- Left section close-->
 
 
-				<!-- Blog section start-->
+				<!-- Blog section start -->
 				<div class="col-md-7 slide_panel_2" onmouseover="showscrollbar()">
-					<div class=template><span class="blog_text">Blogs</span></div>
+					<center>
+						{% for blog in blogs%}
+							<div class=template>
+								<h2>
+									<a href="{{ url_for('show_particular_blog', id=blog['id'], by=blog['by'], title=blog['title'], content=blog['content']) }}">{{ blog['title'] }}</a>
+								</h2>
+
+								<div>
+									{{ blog['content'] }}
+								</div>
+								
+								<div>
+									<h4>by -- {{ blog['by'] }}</h4>
+								</div>
+							</div>
+						{% endfor %}
+					</center>
 				</div>
 				<!-- Blog section close-->
 				

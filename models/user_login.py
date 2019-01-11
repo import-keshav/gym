@@ -7,20 +7,9 @@ def search_user(username_or_email, password):
 	collection = database['user_primary_info']
 	username_or_email = str(username_or_email)
 	password = str(password)
-	count = collection.count_documents( 
-		{
-			"$and": 
-				[
-					{
-						"$or": [	{"name": username_or_email} , {"email": username_or_email} ]
-					},
-					
-					{ "password": password}
-
-				]
-		}
-	)
-	if(count == 1):
-		return 1
-	else:
-		return 0
+	for x in collection.find({ "$or": [	{"username": username_or_email} , {"email": username_or_email} ] }):
+		if(x['password'] == password):
+			user_data = x
+			return user_data,True
+		else:
+			return "NO USER",False
