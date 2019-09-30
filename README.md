@@ -4,7 +4,7 @@
 </p>
 A social networking website for gym freaks.
 
-Resources used 
+Resources used :-
 - Flask
 - mongoDB
 - Jquery
