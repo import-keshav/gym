@@ -1,12 +1,15 @@
+#Imported required modules
 from flask import Flask , render_template , request, redirect, url_for, session
 from controller.validation_login import validate
 from controller.handelsBlog import createBlog, getAllBlogs, updateBlog, deleteBlog
 from services.forms import CreateBlog
 import json
 
+#Initialized flask application and secret key
 app = Flask(__name__)
 app.config["SECRET_KEY"] = 'keshav'
 
+#Routing different paths to valid locations
 @app.route("/")
 def login_signup():
     return render_template('login.html')
